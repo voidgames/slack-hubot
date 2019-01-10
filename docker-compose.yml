@@ -1,0 +1,12 @@
+version: '0.1'
+
+services:
+  slack-hubot:
+    build: .
+    ports:
+      - ${PORT}:${PORT}
+    environment:
+      - HUBOT_SLACK_TOKEN
+      - HUBOT_SLACK_TEAM
+      - HUBOT_SLACK_BOTNAME
+    env_file: .env
