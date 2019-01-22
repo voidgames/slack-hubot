@@ -5,6 +5,8 @@ services:
     build: .
     ports:
       - ${PORT}:${PORT}
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
     environment:
       - HUBOT_SLACK_TOKEN
       - HUBOT_SLACK_TEAM
