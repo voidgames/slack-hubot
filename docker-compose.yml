@@ -11,4 +11,7 @@ services:
       - HUBOT_SLACK_TOKEN
       - HUBOT_SLACK_TEAM
       - HUBOT_SLACK_BOTNAME
+      - TZ
+      - NPM_CONFIG_PREFIX
+      - PATH
     env_file: .env
