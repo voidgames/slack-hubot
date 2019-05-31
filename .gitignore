@@ -60,5 +60,8 @@ typings/
 # next.js build output
 .next
 
-# debug
+# for develop
 docker-compose.dev.yml
+TomDoc
+
+.DS_Store
